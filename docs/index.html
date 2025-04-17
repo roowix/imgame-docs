@@ -35,6 +35,24 @@
         loadNavbar: true,
         mergeNavbar: true,
         subMaxLevel: 3,
+        darklightTheme: {
+          defaultTheme: 'light', // или 'dark' по умолчанию
+          siteFont: 'Segoe UI, sans-serif',
+          codeFontFamily: 'Courier New, monospace',
+          bodyFontSize: '16px',
+          dark: {
+            background: '#1e1e1e',
+            textColor: '#ffffff',
+            codeBackgroundColor: '#2d2d2d',
+            codeTextColor: '#ffffff',
+          },
+          light: {
+            background: '#ffffff',
+            textColor: '#2c3e50',
+            codeBackgroundColor: '#f8f8f8',
+            codeTextColor: '#333',
+          },
+        }
       }
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.js"></script>
@@ -42,7 +60,8 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-darklight-theme.js"></script>
+    <!-- Dark/Light theme plugin -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-darklight-theme.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-darklight-theme.min.js"></script>
   </body>
-
 </html>
